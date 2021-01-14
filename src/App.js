@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Profil from './components/Profil';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Listes des profils</h1>
+      <Profil first="Anis" family="Poupouille">Anis, le meilleur Poupouille du Monde Coeur-Coeur</Profil>
+      <Profil first="Florence" family="Pimpinou">Florence, la Pimpinou préférée de Poupouille</Profil>
+      <Profil first="Chloé" family="La Petite Rue">Celle qui a le meilleur beau-frère</Profil>
+      <Profil first="Chocolat" family="le King"></Profil>
     </div>
   );
 }
